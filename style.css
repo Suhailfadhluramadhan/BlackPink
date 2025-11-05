@@ -26,8 +26,9 @@ body {
     top: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.95);
+    background: transparent;
     backdrop-filter: blur(10px);
-    z-index: 1000;
+    z-index: 10;
     padding: 1rem 5%;
     display: flex;
     justify-content: space-between;
@@ -764,5 +765,46 @@ section {
 
     .sidebar {
         display: none !important;
+    }
+}
+
+.text-container {
+    position: relative;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 10;
+    text-align: center;
+   
+}
+
+.text-jalan {
+    position: relative;
+    display: inline-block;
+    left: 100%;
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ff4da6;
+    white-space: nowrap;
+    animation: jalan 10s linear infinite;
+    text-shadow: 0 0 20px rgba(255, 0, 110, 0.8);
+}
+
+@keyframes jalan {
+    0% {
+        left: 100%;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        left: -100%;
+        opacity: 0;
     }
 }
