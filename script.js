@@ -200,7 +200,3 @@ document.querySelectorAll(".album-item").forEach((item) => {
   });
 });
 
-//yuu
-//yukiky
-//usuruwudsiaueuue
-//ususus
